@@ -1,0 +1,137 @@
+@import "../../globalstyles.scss";
+.searchbar {
+  margin: 44px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: padding-bottom 300ms ease;
+  &.deploy-tags,
+  &.deploy-tags.dark {
+    padding-bottom: 120px;
+  }
+
+  &.dark {
+    background-color: unset;
+    transition: background-color $transitionTime ease;
+    transition: padding-bottom 300ms ease;
+  }
+  h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #572ee5;
+    transition: all $transitionTime ease;
+    &.dark {
+      background-color: unset;
+      color: white;
+      transition: all $transitionTime ease;
+    }
+  }
+  & > img {
+    margin-top: 14px;
+    width: 399px;
+    height: 190px;
+  }
+  .bar {
+    width: 100%;
+    max-width: 542px;
+    height: 52px;
+    margin-inline: 1rem;
+
+    border: 1px solid #121212;
+    box-sizing: border-box;
+    border-radius: 61px;
+    display: flex;
+    overflow: hidden;
+    transition: all $transitionTime ease;
+
+    &.suggestions {
+      border-bottom: none;
+    }
+    &.dark,
+    &.dark .button-submit {
+      border-color: white;
+      transition: border-color $transitionTime ease;
+    }
+    input {
+      flex: auto;
+      border: none;
+      padding: 16px 20px;
+      font-size: 18px;
+      line-height: 21px;
+      transition: all $transitionTime ease;
+      z-index: 1;
+      &.dark {
+        background-color: $backgroundDark;
+        color: white;
+        transition: all $transitionTime ease;
+      }
+    }
+    .button-submit {
+      background-color: #572ee5;
+      width: 86px;
+      height: 52px;
+      border: none;
+      border-left: 1px black solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1;
+      transition: all $transitionTime ease;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .suggestions {
+    width: 542px;
+    position: absolute;
+    list-style: none;
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 0 26px 26px;
+    padding: 1rem 0;
+    padding-top: 2rem;
+    top: calc(100% - 120px);
+    animation: deployList 500ms ease;
+    transform: translateY(-26px);
+    transition: border-color $transitionTime ease, color $transitionTime ease;
+
+    z-index: 0;
+    &.dark {
+      background-color: unset;
+      border-color: white;
+      color: white;
+      transition: border-color $transitionTime ease, color $transitionTime ease;
+    }
+    li {
+      cursor: pointer;
+      padding: 0 1rem;
+      z-index: 3;
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}
+@keyframes deployList {
+  0% {
+    opacity: 0;
+    transform: translateY(-52px) scaleY(0);
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-26px) scaleY(1);
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../globalstyles.scss";
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 68px;
+  transition: all $transitionTime ease;
+}
+.logo {
+  width: 59.11px;
+  height: 59.11px;
+}
+.button-dark-mode {
+  width: 148px;
+  height: 43px;
+  color: #6809e1;
+  border: 1px solid #6809e1;
+  box-sizing: border-box;
+  border-radius: 61px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all $transitionTime ease;
+  &.dark {
+    color: white;
+    border-color: white;
+    transition: all $transitionTime ease;
+  }
+}

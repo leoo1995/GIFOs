@@ -1,0 +1,25 @@
+@import "../../globalstyles.scss";
+
+.app {
+  display: flex;
+  transition: all $transitionTime ease;
+}
+.dark {
+  background-color: $backgroundDark;
+  // transition: all $transitionTime ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  flex-basis: 900px;
+  flex-shrink: 1;
+  min-height: 100vh;
+  margin: 10px auto;
+  border: 1px solid #e8e8e8;
+  transition: all $transitionTime ease;
+  &.dark {
+    background-color: unset;
+    transition: all $transitionTime ease;
+  }
+}
