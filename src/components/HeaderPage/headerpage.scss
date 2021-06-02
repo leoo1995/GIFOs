@@ -31,3 +31,8 @@
     transition: all $transitionTime ease;
   }
 }
+@media screen and (max-width: 425px) {
+  .header {
+    padding-inline: 1rem;
+  }
+}

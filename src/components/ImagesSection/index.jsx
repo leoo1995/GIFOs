@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
+import Image from "./Image";
 import "./imagessection.scss";
 import { getGIFsSearch } from "../../api";
 import errorGif from "../../assets/error.gif";
 import loadingGif from "../../assets/loading.gif";
-import loadingGifDark from "../../assets/24 (2).gif";
+import loadingGifDark from "../../assets/loadingdark.gif";
 const ImagesSection = ({ darkToggle, ...props }) => {
   const [GIFs, setGIFs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
+  // const [imagesLoaded, setImagesLoaded] = useState([]);
   useEffect(() => {
     setIsLoading(true);
     setGIFs([]);
@@ -36,10 +37,14 @@ const ImagesSection = ({ darkToggle, ...props }) => {
             className="loading"
           />
         ) : (
-          GIFs.map((GIF, id) => (
-            <div key={id}>
-              <img src={GIF.images.original.url} alt={GIF.title} id={GIF.id} />
-            </div>
+          GIFs.map(GIF => (
+            <Image
+              key={GIF.id}
+              src={GIF.images.original.url}
+              alt={GIF.title}
+              id={GIF.id}
+              {...{ darkToggle }}
+            />
           ))
         )}
       </section>
