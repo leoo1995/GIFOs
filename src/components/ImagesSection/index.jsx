@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import notFoundImage from "../../assets/notFound.gif";
 import Image from "./Image";
 import "./imagessection.scss";
 import { getGIFsSearch } from "../../api";
@@ -37,15 +38,23 @@ const ImagesSection = ({ darkToggle, ...props }) => {
             className="loading"
           />
         ) : (
-          GIFs.map(GIF => (
-            <Image
-              key={GIF.id}
-              src={GIF.images.original.url}
-              alt={GIF.title}
-              id={GIF.id}
-              {...{ darkToggle }}
-            />
-          ))
+          GIFs.map(GIF => {
+            console.log(notFoundImage);
+            return (
+              <Image
+                key={GIF.id}
+                src={
+                  GIF?.images?.original?.url
+                    ? GIF?.images?.original?.url
+                    : notFoundImage
+                }
+                // src={notFoundImage}
+                alt={GIF.title}
+                id={GIF.id}
+                {...{ darkToggle }}
+              />
+            );
+          })
         )}
       </section>
     </>

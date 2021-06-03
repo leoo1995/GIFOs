@@ -61,3 +61,14 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: 425px) {
+  .search-results {
+    margin-bottom: 20px;
+  }
+  .images-section {
+    padding-top: 20px;
+    div {
+      margin-bottom: 10px;
+    }
+  }
+}

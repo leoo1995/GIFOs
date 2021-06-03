@@ -34,5 +34,13 @@
 @media screen and (max-width: 425px) {
   .header {
     padding-inline: 1rem;
+    .button-dark-mode {
+      width: 100px;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
   }
 }
