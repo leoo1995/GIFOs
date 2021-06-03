@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import notFoundImage from "../../assets/notFound.gif";
+import notFoundImage from "../../assets/notfound.gif";
 import Image from "./Image";
 import "./imagessection.scss";
 import { getGIFsSearch } from "../../api";

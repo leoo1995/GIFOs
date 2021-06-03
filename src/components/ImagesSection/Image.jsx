@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import spinner from "../../assets/spinnerpurple.gif";
-import spinnerDark from "../../assets/spinnerDark.gif";
+import spinnerDark from "../../assets/spinnerdark.gif";
 
 const Image = ({ src, alt, id, darkToggle }) => {
   const [loaded, setLoaded] = useState(false);
