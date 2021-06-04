@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/GIFOs/static/css/main.737b2920.chunk.css",
+    "main.js": "/GIFOs/static/js/main.c39f2272.chunk.js",
+    "main.js.map": "/GIFOs/static/js/main.c39f2272.chunk.js.map",
+    "runtime-main.js": "/GIFOs/static/js/runtime-main.c07b22f6.js",
+    "runtime-main.js.map": "/GIFOs/static/js/runtime-main.c07b22f6.js.map",
+    "static/js/2.2d681330.chunk.js": "/GIFOs/static/js/2.2d681330.chunk.js",
+    "static/js/2.2d681330.chunk.js.map": "/GIFOs/static/js/2.2d681330.chunk.js.map",
+    "index.html": "/GIFOs/index.html",
+    "static/css/main.737b2920.chunk.css.map": "/GIFOs/static/css/main.737b2920.chunk.css.map",
+    "static/js/2.2d681330.chunk.js.LICENSE.txt": "/GIFOs/static/js/2.2d681330.chunk.js.LICENSE.txt",
+    "static/media/error.c808912f.gif": "/GIFOs/static/media/error.c808912f.gif",
+    "static/media/icon-search-mod-noc.ecc2b197.svg": "/GIFOs/static/media/icon-search-mod-noc.ecc2b197.svg",
+    "static/media/ilustra_header.9d4669b1.svg": "/GIFOs/static/media/ilustra_header.9d4669b1.svg",
+    "static/media/loading.3852c0d4.gif": "/GIFOs/static/media/loading.3852c0d4.gif",
+    "static/media/loadingdark.82fd88f9.gif": "/GIFOs/static/media/loadingdark.82fd88f9.gif",
+    "static/media/logo-desktop.428b4138.svg": "/GIFOs/static/media/logo-desktop.428b4138.svg",
+    "static/media/logo-mobile-modo-noct.f5546739.svg": "/GIFOs/static/media/logo-mobile-modo-noct.f5546739.svg",
+    "static/media/notfound.b885ca16.gif": "/GIFOs/static/media/notfound.b885ca16.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c07b22f6.js",
+    "static/js/2.2d681330.chunk.js",
+    "static/css/main.737b2920.chunk.css",
+    "static/js/main.c39f2272.chunk.js"
+  ]
+}
