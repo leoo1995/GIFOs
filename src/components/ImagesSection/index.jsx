@@ -39,7 +39,6 @@ const ImagesSection = ({ darkToggle, ...props }) => {
           />
         ) : (
           GIFs.map(GIF => {
-            console.log(notFoundImage);
             return (
               <Image
                 key={GIF.id}
